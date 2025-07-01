@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: podpulse-telegram
+  namespace: podpulse
+  labels:
+    app: podpulse-telegram
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: podpulse-telegram
+  template:
+    metadata:
+      labels:
+        app: podpulse-telegram
+    spec:
+      serviceAccountName: podpulse-sa
+      containers:
+        - name: podpulse-telegram
+          image: virsuryaircas/podpulse-telegram:v1
+          imagePullPolicy: Always
+          env:
+            - name: PYTHONUNBUFFERED
+              value: "1"
+            - name: TELEGRAM_BOT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: podpulse-telegram-token
+                  key: TELEGRAM_BOT_TOKEN
+          livenessProbe:
+            exec:
+              command:
+                - pgrep
+                - -f
+                - podpulse-telegram
+            initialDelaySeconds: 10
+            periodSeconds: 30
+            failureThreshold: 3
+            timeoutSeconds: 2
