@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: podpulse-slack
+  namespace: podpulse
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: podpulse-slack
+  template:
+    metadata:
+      labels:
+        app: podpulse-slack
+    spec:
+      serviceAccountName: podpulse-sa
+      containers:
+        - name: podpulse-slack
+          image: virsuryaircas/podpulse-slack:v1
+          env:
+            - name: PYTHONUNBUFFERED
+              value: "1"
+          envFrom:
+            - secretRef:
+                name: podpulse-slack-token
+          livenessProbe:
+            exec:
+              command:
+                - pgrep
+                - -f
+                - podpulse-slack
+            initialDelaySeconds: 15
+            periodSeconds: 20
+            timeoutSeconds: 5
+            failureThreshold: 3
