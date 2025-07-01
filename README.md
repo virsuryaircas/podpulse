@@ -1,9 +1,20 @@
-# Pod Status Checker with BOT
+# PodPulse – Stay in Sync with Your Kubernetes Pods, Anywhere.
 > *If all pods are in the `Running` state, your cluster health is likely above 80%.*
 
-**PodPulse** is a simple Kubernetes tool to show the live pulse of your cluster based on Pod status. It helps you quickly identify pod states in a clean and color-coded way using a traffic-light style view (Green, Yellow, Red).
+**PodPulse** is a simple Kubernetes tool to qucik check the live pulse of Pods based on its status via  `Slack` or `Telegram` bot.<br>
+No more SSH hassles. 
 
-## ⚙️ Setups Instructions for Slack
+## 🌍 Use Case
+
+- **Mobile First K8s Visibility**: When laptop is not in hands
+-  Whether you're away from your desk or off-duty
+
+## 🤖 Guide to create BOT
+
+- **Slack Bot** - 
+- **Telegram Bot** - 
+
+<h2><img src="https://www.svgrepo.com/download/303320/slack-new-logo-logo.svg" alt="Slack" width="20" style="vertical-align:middle; margin-right:8px;" /> Setup Instructions for Slack</h2>
 
 ```bash
 # Clone the repository
@@ -27,7 +38,7 @@ k logs -n podpulse deploy/podpulse-slack
 💬 Ready to respond to /pp, /green, /yellow, /red, /ppd, /help commands!
 ⚡️ Bolt app is running!
 ```
-## ⚙️ Setups Instructions for Telegram
+<h2><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="Telegram" width="20" style="vertical-align:middle; margin-right:8px;" /> Setup Instructions for Telegram</h2>
 
 ```bash
 # Clone the repository
@@ -54,7 +65,7 @@ k logs -n podpulse deploy/podpulse-telegram
 
 ## 📡 PodPulse - Pod Status Checker
 
-Legends presents the live status of your pods using a traffic-light-style 🚥:
+Its messaging format legends presents the live status of your pods using a traffic-light-style 🚥:
 
 - 🟢 **Green** – Healthy Pods  
   - `Running`  
@@ -67,32 +78,38 @@ Legends presents the live status of your pods using a traffic-light-style 🚥:
   - `NodeAffinity`
 
 - 🔴 **Red** – Unhealthy Pods  
-  - `CrashLoopBackOff`  
-  - `Error`  
-  - `Init:Error`  
-  - `ImagePullBackOff`  
-  - `ErrImagePull`  
-  - `Unknown`  
+  - `CrashLoopBackOff`
+  - `ImagePullBackOff`
+  - `ErrImagePull`
+  - `Error`
+  - `Unknown`
+  - `Init:Error`
   - `Init:CrashLoopBackOff`
 
----
 
----
 ## 📘 Available Commands
 
-Use these Slack slash commands to query cluster pod statuses via the **PodPulse** bot:
+Use these slash commands to query cluster pod statuses via the bot:
 
 | Command   | Description |
 |-----------|-------------|
 | `/pp`     | Show a summary of **all pod statuses** |
-| `/green`  | Show only **healthy pods** (`Running`, `Completed`) |
-| `/yellow` | Show **transitional pods** (`Pending`, `ContainerCreating`, `Terminating`, `NodeAffinity`) |
-| `/red`    | Show **unhealthy pods** (`CrashLoopBackOff`, `Error`, `Init:Error`, `ImagePullBackOff`, `ErrImagePull`, `Unknown`, `Init:CrashLoopBackOff`) |
+| `/green`  | Show **healthy pods**  |
+| `/yellow` | Show **transitional pods**  |
+| `/red`    | Show **unhealthy pods**  |
 | `/ppd`    | Display **detailed status** of all pods |
-| `/help`   | List all available commands and usage help |
+| `/help`   | List all available commands |
 
-> 💬 These commands are triggered directly from Slack using the PodPulse integration.
+> 💬 Note:
+For Slack, you must define these commands in your bot settings.
+For Telegram, it's optional — but recommended, setting the commands enables a quick-access menu, making it easier to use.
+
+Once commands are set, there's no need to type — just tap and go. 🚀
+
+## 🐳 Docker Image for PodPulse
+📦 Slack Bot - [virsuryaircas/podpulse-slack](https://hub.docker.com/repository/docker/virsuryaircas/podpulse-slack) <br>
+📦 Telegram Bot - [virsuryaircas/podpulse-telegram](https://hub.docker.com/repository/docker/virsuryaircas/telegram-slack)
 
 ---
 
-
+ Be the Doctor of your Pods by checking its Pulse!!!
