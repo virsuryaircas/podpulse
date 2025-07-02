@@ -1,7 +1,7 @@
 # PodPulse – Stay in Sync with Your Kubernetes Pods, Anywhere.
 > *If all pods are in the `Running` state, your cluster health is likely above 80%.*
 
-**PodPulse** is a simple Kubernetes tool to qucik check the live pulse of Pods based on its status via  `Slack` or `Telegram` bot.<br>
+Its is a simple Kubernetes tool to qucik check the live pulse of Pods based on its status via  `Slack` or `Telegram` bot.<br>
 No more SSH hassles. 
 
 ## 🌍 Use Case
