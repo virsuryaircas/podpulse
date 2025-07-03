@@ -11,8 +11,8 @@ No more SSH hassles.
 
 ## 🤖 Guide to create BOT
 
-- **Slack Bot** - 
-- **Telegram Bot** - 
+- **Slack Bot** - [Step-by-Step Guide to Creating a Slack Bot and Getting Your Bot & App Token](https://virsuryaircas.hashnode.dev/create-slack-bot-get-bot-app-token)
+- **Telegram Bot** - Under Draft
 
 <h2><img src="https://www.svgrepo.com/download/303320/slack-new-logo-logo.svg" alt="Slack" width="20" style="vertical-align:middle; margin-right:8px;" /> Setup Instructions for Slack</h2>
 
