@@ -1,8 +1,13 @@
-# PodPulse – Stay in Sync with Your Kubernetes Pods, Anywhere.
+<p align="center">
+  <img src="https://github.com/virsuryaircas/podpulse/blob/main/pp-github-cover.png?raw=true" alt="PodPulse GitHub Cover"/>
+</p>
+
+# Be the Doctor of your Pods by checking its Pulse!!!
+
 > *If all pods are in the `Running` state, your cluster health is likely above 80%.*
 
 Its is a simple Kubernetes tool to qucik check the live pulse of Pods based on its status via  `Slack` or `Telegram` bot.<br>
-No more SSH hassles. 
+No more SSH hassles. Stay in Sync with Your Kubernetes Pods, Anywhere.
 
 ## 🌍 Use Case
 
@@ -110,6 +115,3 @@ Once commands are set, there's no need to type — just tap and go. 🚀
 📦 Slack Bot - [virsuryaircas/podpulse-slack](https://hub.docker.com/repository/docker/virsuryaircas/podpulse-slack) <br>
 📦 Telegram Bot - [virsuryaircas/podpulse-telegram](https://hub.docker.com/repository/docker/virsuryaircas/telegram-slack)
 
----
-
- Be the Doctor of your Pods by checking its Pulse!!!
