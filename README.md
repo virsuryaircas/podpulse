@@ -93,11 +93,11 @@ Use these slash commands to query cluster pod statuses via the bot:
 
 | Command   | Description |
 |-----------|-------------|
-| `/pp`     | Show a summary of **all pod statuses** |
-| `/green`  | Show **healthy pods**  |
-| `/yellow` | Show **transitional pods**  |
-| `/red`    | Show **unhealthy pods**  |
-| `/ppd`    | Display **detailed status** of all pods |
+| `/pp`     | Get a summary of **all pod statuses** |
+| `/green`  | Get **healthy pods**  |
+| `/yellow` | Get **transitional pods**  |
+| `/red`    | Get **unhealthy pods**  |
+| `/ppd`    | Get **detailed status** of all pods |
 | `/help`   | List all available commands |
 
 > 💬 Note:
