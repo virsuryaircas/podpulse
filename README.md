@@ -16,7 +16,7 @@ No more SSH hassles. Stay in Sync with Your Kubernetes Pods, Anywhere.
 
 ## 🤖 Guide to create BOT
 
-- **Slack Bot** - [Step-by-Step Guide to Creating a Slack Bot and Getting Your Bot & App Token](https://virsuryaircas.hashnode.dev/create-slack-bot-get-bot-app-token)
+- <strong>Slack Bot</strong> - <a href="https://virsuryaircas.hashnode.dev/create-slack-bot-get-bot-app-token" target="_blank">Step-by-Step Guide to Creating a Slack Bot and Getting Your Bot & App Token</a>
 - **Telegram Bot** - Under Draft
 
 <h2><img src="https://www.svgrepo.com/download/303320/slack-new-logo-logo.svg" alt="Slack" width="20" style="vertical-align:middle; margin-right:8px;" /> Setup Instructions for Slack</h2>
@@ -112,6 +112,6 @@ For Telegram, it's optional — but recommended, setting the commands enables a 
 Once commands are set, there's no need to type — just tap and go. 🚀
 
 ## 🐳 Docker Image for PodPulse
-📦 Slack Bot - [virsuryaircas/podpulse-slack](https://hub.docker.com/r/virsuryaircas/podpulse-slack) <br>
-📦 Telegram Bot - [virsuryaircas/podpulse-telegram](https://hub.docker.com/r/virsuryaircas/podpulse-telegram)
+📦 Slack Bot - <a href="https://hub.docker.com/r/virsuryaircas/podpulse-slack" target="_blank">virsuryaircas/podpulse-slack</a> <br>
+📦 Telegram Bot - <a href="https://hub.docker.com/r/virsuryaircas/podpulse-telegram" target="_blank">virsuryaircas/podpulse-telegram</a>
 
