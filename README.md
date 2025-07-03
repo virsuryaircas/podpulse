@@ -6,7 +6,7 @@
 
 > *If all pods are in the `Running` state, your cluster health is likely above 80%.*
 
-Its is a simple Kubernetes tool to qucik check the live pulse of Pods based on its status via  `Slack` or `Telegram` bot.<br>
+Its a simple Kubernetes tool to qucik check the live pulse of Pods based on its status via  `Slack` or `Telegram` bot.<br>
 No more SSH hassles. Stay in Sync with Your Kubernetes Pods, Anywhere.
 
 ## 🌍 Use Case
@@ -112,6 +112,6 @@ For Telegram, it's optional — but recommended, setting the commands enables a 
 Once commands are set, there's no need to type — just tap and go. 🚀
 
 ## 🐳 Docker Image for PodPulse
-📦 Slack Bot - [virsuryaircas/podpulse-slack](https://hub.docker.com/repository/docker/virsuryaircas/podpulse-slack) <br>
-📦 Telegram Bot - [virsuryaircas/podpulse-telegram](https://hub.docker.com/repository/docker/virsuryaircas/telegram-slack)
+📦 Slack Bot - [virsuryaircas/podpulse-slack](https://hub.docker.com/r/virsuryaircas/podpulse-slack) <br>
+📦 Telegram Bot - [virsuryaircas/podpulse-telegram](https://hub.docker.com/r/virsuryaircas/podpulse-telegram)
 
